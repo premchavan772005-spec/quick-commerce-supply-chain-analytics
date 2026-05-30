@@ -55,3 +55,13 @@ The business presentation layer is divided into two operational core areas to de
 
 1. **Inventory Stockout Alerts:** A visual table ranking immediate replenishment necessities based on computed deficits, backed by an amber warning flag system to streamline daily ordering priorities.
 2. **Logistics SLA Analysis:** Side-by-side analytical bar charts comparing historical shipping durations against supplier-promised arrival schedules to isolate delivery bottleneck nodes.
+
+---
+
+## 🖥️ Dashboard Control Tower Previews
+
+### 1. Inventory Stockout Alerts Grid
+![Inventory Stockout Alerts Dashboard](dashboard_page1.png)
+
+### 2. Logistics SLA & Delivery Bottleneck Analysis
+![Logistics SLA Analysis Dashboard](dashboard_page2.png)
