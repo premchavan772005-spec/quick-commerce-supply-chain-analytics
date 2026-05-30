@@ -39,7 +39,6 @@ WHERE
 ORDER BY 
     stock_deficit_qty DESC;
 
----
 ### 2. ETL Data Ingestion Pipeline (`supply_chain_etl.py`)
 Extracts massive raw transactional variables, strips duplicate entries down to distinct tracking parameters, maps business terms to standard database fields, and loads them into the local fact table storage.
 
