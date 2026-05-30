@@ -38,3 +38,19 @@ WHERE
     current_warehouse_est_stock < reorder_point_threshold
 ORDER BY 
     stock_deficit_qty DESC;
+
+### 2. ETL Data Ingestion Pipeline (`supply_chain_etl.py`)
+Extracts massive raw transactional variables, strips duplicate entries down to distinct tracking parameters, maps business terms to standard database fields, and loads them into the local fact table storage.
+
+### 3. Predictive Demand Engine (`predictive_forecasting.py`)
+Pulls historical daily logs to process demand variances and lead times. Implements Operations Research mathematical formulations to establish inventory parameters:
+* **Safety Stock Optimization:** Incorporates standard deviations across both consumption rates and supplier fulfillment variables with a 95% service-level target ($Z = 1.645$).
+* **Reorder Point (ROP):** Calculated using the formula: $\text{ROP} = (\text{Average Daily Demand} \times \text{Average Lead Time}) + \text{Safety Stock}$
+
+---
+
+## 📊 Business Intelligence & Actionable Insights
+The business presentation layer is divided into two operational core areas to deliver maximum value to logistical coordinators:
+
+1. **Inventory Stockout Alerts:** A visual table ranking immediate replenishment necessities based on computed deficits, backed by an amber warning flag system to streamline daily ordering priorities.
+2. **Logistics SLA Analysis:** Side-by-side analytical bar charts comparing historical shipping durations against supplier-promised arrival schedules to isolate delivery bottleneck nodes.
