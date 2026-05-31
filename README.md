@@ -1,5 +1,7 @@
 # 📦 Quick-Commerce Supply Chain Optimization & Predictive Control Tower
 
+🚀 **[👉 Live ML Demo — Click Here](https://quick-commerce-supply-chain-analytics-jsmnrfcwueq6d2l4hpbnnt.streamlit.app/)**
+
 ## 📌 Project Overview
 An end-to-end Data Engineering and Operations Research pipeline built to optimize quick-commerce logistics fulfillment. The system ingests raw multi-variant supply chain logs into a relational database warehouse, applies advanced exponential demand smoothing to compute dynamically adjusted reorder thresholds, and exposes live operational status anomalies through a professional executive control dashboard.
 
